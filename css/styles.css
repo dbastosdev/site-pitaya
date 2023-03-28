@@ -109,7 +109,7 @@
      * color-2(#eb5e55)
      * color-3(#f2d0a4)
      */
-    --color-1: hsla(345, 93%, 44%, 1);
+    --color-1: hsla(334.1,100%,50%, 1);
     --color-2: hsla(4, 79%, 63%, 1);
     --color-3: hsla(34, 75%, 80%, 1);
 
@@ -3133,8 +3133,8 @@ input::-moz-focus-inner {
 }
 
 .s-header__logo img {
-    width: 68px;
-    height: 10px;
+    width: 100px;
+    /* height: 10px; */
     margin-bottom: 0;
 }
 
@@ -3485,7 +3485,7 @@ input::-moz-focus-inner {
     position: relative;
 }
 
-.s-hero__bg {
+/* .s-hero__bg {
     background-image: url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -3495,7 +3495,7 @@ input::-moz-focus-inner {
     right: 0;
     bottom: 0;
     left: 36.5vw;
-}
+} */
 
 .s-hero__bg::after {
     display: block;
@@ -3535,6 +3535,7 @@ input::-moz-focus-inner {
     position: relative;
 }
 
+/* avaliação do texto do hero pitaya */
 .s-hero__content h1 {
     font-size: 22rem;
     font-weight: 600;
@@ -3897,7 +3898,8 @@ html.no-csstransitions .s-hero__content {
     .s-hero__bg {
         display: block;
         width: 50vw;
-        height: 50vh;
+        /* height: 50vh; alteração da altura do texto na tela */
+        height: 15vh;
         top: 12rem;
         right: 0;
         bottom: auto;
@@ -3944,6 +3946,7 @@ html.no-csstransitions .s-hero__content {
 @media screen and (max-width: 600px) {
     .s-hero__content h1 {
         font-size: 28vw;
+        padding-bottom: 120px; /* ajuste do responsivo */
     }
     .s-hero__content-about {
         padding-right: 15vw;
@@ -3982,6 +3985,7 @@ html.no-csstransitions .s-hero__content {
         left: -8rem;
     }
     .s-hero__content {
+        /* padding-bottom: 14vh; padding do texto */
         padding-bottom: 14vh;
     }
     .s-hero__content-about {
@@ -4734,13 +4738,13 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1600px) {
     .s-contact__email {
-        font-size: calc(var(--text-size) * 6);
+        font-size: calc(var(--text-size) * 4);
     }
 }
 
 @media screen and (max-width: 1200px) {
     .s-contact__email {
-        font-size: 10vw;
+        font-size: 5vw;
     }
 }
 
